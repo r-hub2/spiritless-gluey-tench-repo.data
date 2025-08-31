@@ -1,18 +1,19 @@
 Package: repo.data
 Title: R Repository Data
-Version: 0.0.0.9004
+Version: 0.1.0
 Authors@R: 
-    person("Lluís", "Revilla Sancho", , "lluis.revilla@gmail.com", role = c("aut", "cre"),
+    person("Lluís", "Revilla Sancho", , "lluis.revilla@gmail.com", role = c("aut", "cre", "cph"),
            comment = c(ORCID = "0000-0001-9747-2570"))
-Description: Retrieve repositories package metadata to explore the package
-    dependencies, help links, alias, dates...  Provides functions for repository 
-    maintainers, package maintainers and users to navigate links and dependencies
-    changes.
+Description: Retrieve metadata about packages from repositories in order
+    to explore package dependencies, links between help pages, aliases,
+    package availability on a given date, and other repository dependent
+    outcome. The package provides functions that allow package
+    maintainers and users to navigate changes on dependencies.
 License: GPL (>= 3)
 URL: https://github.com/llrs/repo.data,
         https://llrs.github.io/repo.data/
 BugReports: https://github.com/llrs/repo.data/issues
-Depends: R (>= 4.4)
+Depends: R (>= 4.5)
 Imports: methods, tools, utils
 Suggests: igraph (>= 2.1.4), knitr (>= 1.49), markdown (>= 1.13),
         rversions (>= 2.1.2)
@@ -22,7 +23,7 @@ LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
 NeedsCompilation: no
-Packaged: 2025-08-31 10:53:43 UTC; lluis
-Author: Lluís Revilla Sancho [aut, cre] (ORCID:
+Packaged: 2025-08-31 15:08:02 UTC; lluis
+Author: Lluís Revilla Sancho [aut, cre, cph] (ORCID:
     <https://orcid.org/0000-0001-9747-2570>)
 Maintainer: Lluís Revilla Sancho <lluis.revilla@gmail.com>
