@@ -22,7 +22,7 @@ LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
 NeedsCompilation: no
-Packaged: 2025-08-31 08:05:46 UTC; lluis
+Packaged: 2025-08-31 10:20:58 UTC; lluis
 Author: Lluís Revilla Sancho [aut, cre] (ORCID:
     <https://orcid.org/0000-0001-9747-2570>)
 Maintainer: Lluís Revilla Sancho <lluis.revilla@gmail.com>
