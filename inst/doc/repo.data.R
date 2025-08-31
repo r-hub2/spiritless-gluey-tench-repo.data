@@ -29,9 +29,10 @@ pkg <- "BaseSet"
 head(cran_help_pages_wo_links(pkg))
 head(cran_help_pages_not_linked(pkg))
 
-## -----------------------------------------------------------------------------
+## ----eval=requireNamespace("igraph", quietly = TRUE)--------------------------
 cliques <- cran_help_cliques(pkg)
-table(cliques$n) # Number of help pages connected
+# Number of help pages connected
+table(cliques$n) 
 
 ## -----------------------------------------------------------------------------
 cran_help_pages_links_wo_deps(pkg)

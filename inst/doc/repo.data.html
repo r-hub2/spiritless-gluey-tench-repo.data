@@ -213,10 +213,12 @@ head(cran_help_pages_not_linked(pkg))
 #&gt; 6 BaseSet    add_relation.Rd
 </code></pre>
 <p>In addition to those help pages that are not well connected it could be that some pages are linked but link to each other without connecting with other help pages of the package or other packages.</p>
+<p>To retrieve these help pages forming a clique it requires the suggested package igraph.</p>
 <pre><code class="language-r">cliques &lt;- cran_help_cliques(pkg)
 #&gt; Warning in cran_targets_links(pkges): Omitting packages BaseSet, dplyr, methods, rlang, utils, cli, generics, glue, lifecycle, magrittr, pillar, R6, tibble, tidyselect, vctrs, utf8, pkgconfig, withr, graphics, grDevices.
 #&gt; Maybe they are currently not on CRAN?
-table(cliques$n) # Number of help pages connected
+# Number of help pages connected
+table(cliques$n) 
 #&gt; &lt; table of extent 0 &gt;
 </code></pre>
 <p>If there is more than one length this would mean some pages not linked to the rest of the package.</p>
